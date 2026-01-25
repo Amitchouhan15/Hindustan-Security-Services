@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gallery | Hindustan Security Services</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="top-header">
+  <div class="container">
+    <img src="images/logo.jpeg" class="logo">
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="director.html">Director</a>
+      <a href="gallery.html" class="active">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- PAGE BANNER -->
+<section class="page-banner">
+  <h1>Our Gallery</h1>
+  <p>Our Team • Our Work • Our Responsibility</p>
+</section>
+
+<!-- GALLERY SECTION -->
+<section class="gallery-section">
+  <div class="gallery-grid">
+
+    <div class="gallery-item">
+      <a href="images/onduty.jpeg" class="lightbox">
+        <img src="images/onduty.jpeg" alt="Security Guard on Duty">
+      </a>
+    </div>
+
+    <div class="gallery-item">
+      <a href="images/nightguard.jpeg" class="lightbox">
+        <img src="images/nightguard.jpeg" alt="Night Guard">
+      </a>
+    </div>
+
+    <div class="gallery-item">
+      <a href="images/bouncer.jpeg" class="lightbox">
+        <img src="images/bouncer.jpeg" alt="Bouncer Service">
+      </a>
+    </div>
+
+    <div class="gallery-item">
+      <a href="images/patrolling.jpeg" class="lightbox">
+        <img src="images/patrolling.jpeg" alt="Gunman Security">
+      </a>
+    </div>
+
+    <div class="gallery-item">
+      <a href="images/office.jpeg" class="lightbox">
+        <img src="images/office.jpeg" alt="Office / Team">
+      </a>
+    </div>
+
+    
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2025 Hindustan Security Services. All Rights Reserved.</p>
+</footer>
+
+<!-- FLOATING BUTTONS -->
+<a href="https://wa.me/917015155202" class="float whatsapp">
+  <img src="icons/whatsapp.jpeg">
+</a>
+
+<a href="tel:7015155202" class="float call">
+  <img src="icons/call.jpeg">
+</a>
+<script>
+const lightboxLinks = document.querySelectorAll(".lightbox");
+lightboxLinks.forEach(link => {
+  link.addEventListener("click", function(e){
+    e.preventDefault();
+    const overlay = document.createElement("div");
+    overlay.style.position = "fixed";
+    overlay.style.top = "0";
+    overlay.style.left = "0";
+    overlay.style.width = "100%";
+    overlay.style.height = "100%";
+    overlay.style.background = "rgba(0,0,0,0.8)";
+    overlay.style.display = "flex";
+    overlay.style.alignItems = "center";
+    overlay.style.justifyContent = "center";
+    overlay.style.zIndex = "9999";
+
+    const img = document.createElement("img");
+    img.src = link.href;
+    img.style.maxWidth = "90%";
+    img.style.maxHeight = "90%";
+    img.style.borderRadius = "15px";
+    overlay.appendChild(img);
+
+    overlay.addEventListener("click", () => {
+      overlay.remove();
+    });
+
+    document.body.appendChild(overlay);
+  });
+});
+</script>
+<script>
+function toggleMenu() {
+  const nav = document.querySelector("nav");
+  nav.classList.toggle("active");
+}
+</script>
+<script>
+const sections = document.querySelectorAll("section");
+
+function reveal() {
+  sections.forEach(section => {
+    const top = section.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    if(top < windowHeight - 100) {
+      section.classList.add("visible");
+    }
+  });
+}
+
+window.addEventListener("scroll", reveal);
+window.addEventListener("load", reveal);
+</script>
+
+
+
+</body>
+</html>

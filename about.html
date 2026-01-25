@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Us | Hindustan Security Services</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- HEADER (same as home) -->
+<header class="top-header">
+  <div class="container">
+    <img src="images/logo.jpeg" class="logo">
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">About</a>
+      <a href="services.html">Services</a>
+      <a href="director.html">Director</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- PAGE BANNER -->
+<section class="page-banner">
+  <h1>About Us</h1>
+  <p>Your Safety, Our Priority</p>
+</section>
+
+<!-- ABOUT CONTENT -->
+<section class="about-section">
+  <div class="about-container">
+
+    <!-- TEXT -->
+    <div class="about-text">
+      <h2>Who We Are</h2>
+      <p>
+        <strong>Hindustan Security Services</strong> is a professional
+        security service provider established in 2025 with a strong
+        commitment to safety, discipline, and reliability.
+      </p>
+
+      <p>
+        We provide trained and well-disciplined security personnel for
+        residential societies, commercial buildings, industrial sites,
+        and events. Our focus is on delivering dependable security
+        solutions that create a safe and peaceful environment for our
+        clients.
+      </p>
+
+      <p>
+        With a client-centric approach and strict recruitment standards,
+        we ensure that every guard deployed by us meets high standards
+        of professionalism, alertness, and integrity.
+      </p>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="about-image">
+      <img src="images/guard1.jpeg" alt="Security Team">
+    </div>
+
+  </div>
+</section>
+
+<!-- MISSION & VISION -->
+<section class="section gray">
+</section>
+<script>
+function toggleMenu() {
+  const nav = document.querySelector("nav");
+  nav.classList.toggle("active");
+}
+</script>
+<script>
+const sections = document.querySelectorAll("section");
+
+function reveal() {
+  sections.forEach(section => {
+    const top = section.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    if(top < windowHeight - 100) {
+      section.classList.add("visible");
+    }
+  });
+}
+
+window.addEventListener("scroll", reveal);
+window.addEventListener("load", reveal);
+</script>
+
+
+</body>
+</html>

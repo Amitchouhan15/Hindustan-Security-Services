@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hindustan Security Services</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="top-header">
+  <div class="container">
+    <img src="images/logo.jpeg" class="logo">
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="director.html">Director</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>HINDUSTAN SECURITY SERVICES</h1>
+    <p>Your Safety, Our Priority</p>
+    <a href="tel:7015155202" class="btn">Call Now</a>
+  </div>
+</section>
+
+<!-- ABOUT PREVIEW -->
+<section class="section">
+  <h2>Who We Are</h2>
+  <p>
+    Hindustan Security Services is a professional security company
+    established in 2025, providing trained and disciplined manpower
+    for residential, commercial and industrial security needs.
+  </p>
+</section>
+
+<!-- SERVICES -->
+<section class="section gray">
+  <h2>Our Services</h2>
+
+  <div class="grid">
+    <div class="card">Security Guards</div>
+    <div class="card">Night Guards</div>
+    <div class="card">Bouncers</div>
+    <div class="card">Gunman</div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2025 Hindustan Security Services</p>
+</footer>
+
+<!-- FLOATING BUTTONS -->
+<a href="https://wa.me/917015155202" class="float whatsapp">
+  <img src="icons/whatsapp.jpeg">
+</a>
+
+<a href="tel:7015155202" class="float call">
+  <img src="icons/call.jpeg">
+</a>
+<script>
+function toggleMenu() {
+  const nav = document.querySelector("nav");
+  nav.classList.toggle("active");
+}
+</script>
+<script>
+const sections = document.querySelectorAll("section");
+
+function reveal() {
+  sections.forEach(section => {
+    const top = section.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    if(top < windowHeight - 100) {
+      section.classList.add("visible");
+    }
+  });
+}
+
+window.addEventListener("scroll", reveal);
+window.addEventListener("load", reveal);
+</script>
+
+
+</body>
+</html>

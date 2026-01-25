@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Our Services | Hindustan Security Services</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="top-header">
+  <div class="container">
+    <img src="images/logo.jpeg" class="logo">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html" class="active">Services</a>
+      <a href="director.html">Director</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- PAGE BANNER -->
+<section class="page-banner">
+  <h1>Our Security Services</h1>
+  <p>Professional • Trained • Reliable</p>
+</section>
+
+<!-- SERVICES SECTION -->
+<section class="section">
+  <div class="grid">
+
+    <!-- Service 1 -->
+    <div class="service-card">
+      <img src="images/guard1.jpeg" alt="Security Guard">
+      <h3>Security Guards</h3>
+      <p>
+        Well-trained and disciplined security guards for residential,
+        commercial and industrial premises to ensure complete safety.
+      </p>
+    </div>
+
+    <!-- Service 2 -->
+    <div class="service-card">
+      <img src="images/nightguard.jpeg" alt="Night Guard">
+      <h3>Night Guards</h3>
+      <p>
+        Reliable night security services with alert personnel to protect
+        your property during late hours.
+      </p>
+    </div>
+
+    <!-- Service 3 -->
+    <div class="service-card">
+      <img src="images/bouncer.jpeg" alt="Bouncers">
+      <h3>Bouncers</h3>
+      <p>
+        Professional bouncers for events, clubs and private functions,
+        trained to manage crowds and maintain discipline.
+      </p>
+    </div>
+
+    <!-- Service 4 -->
+    <div class="service-card">
+      <img src="images/patrolling.jpeg" alt="Gunman">
+      <h3>Gunman</h3>
+      <p>
+        Armed security personnel providing high-level protection for
+        individuals, offices and sensitive locations.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2025 Hindustan Security Services. All Rights Reserved.</p>
+</footer>
+
+<!-- FLOATING BUTTONS -->
+<a href="https://wa.me/917015155202" class="float whatsapp">
+  <img src="icons/whatsapp.jpeg">
+</a>
+
+<a href="tel:7015155202" class="float call">
+  <img src="icons/call.jpeg">
+</a>
+<script>
+function toggleMenu() {
+  const nav = document.querySelector("nav");
+  nav.classList.toggle("active");
+}
+</script>
+<script>
+const sections = document.querySelectorAll("section");
+
+function reveal() {
+  sections.forEach(section => {
+    const top = section.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    if(top < windowHeight - 100) {
+      section.classList.add("visible");
+    }
+  });
+}
+
+window.addEventListener("scroll", reveal);
+window.addEventListener("load", reveal);
+</script>
+
+
+
+</body>
+</html>
