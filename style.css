@@ -1,303 +1,104 @@
-body {
-  margin: 0;
-  font-family: Poppins, Arial;
+body{
+  margin:0;
+  font-family: 'Arial', sans-serif;
+  background:#f5f6fa;
+  color:#333;
+  line-height:1.6;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  padding: 15px 40px;
-  background: navy;
+header{
+  background:#0b1d2a;
+  color:#fff;
+  padding:20px 0;
+  text-align:center;
 }
 
-header a {
-  color: white;
-  margin: 0 10px;
-  text-decoration: none;
+nav ul{
+  list-style:none;
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  padding:0;
+  margin:0;
 }
 
-.logo {
-  height: 50px;
+nav ul li a{
+  color:#fff;
+  text-decoration:none;
+  font-weight:600;
+  transition:0.3s;
 }
 
-.hero {
-  background: url("../images/banner.jpg") no-repeat center;
-  background-size: cover;
-  color: white;
-  padding: 100px 20px;
-  text-align: center;
+nav ul li a:hover{
+  color:#25d366; /* WhatsApp green effect */
 }
 
-.btn {
-  background: white;
-  color: navy;
-  padding: 12px 25px;
-  text-decoration: none;
-  border-radius: 30px;
+section{
+  padding:60px 20px;
 }
 
-.services {
-  display: grid;
-  grid-template-columns: repeat(4,1fr);
-  gap: 20px;
-  padding: 50px;
+h1,h2,h3{
+  margin-bottom:20px;
+  color:#0b1d2a;
 }
 
-.card {
-  padding: 30px;
-  box-shadow: 0 0 10px #ccc;
-  text-align: center;
-  border-radius: 10px;
+button, .btn{
+  padding:12px 25px;
+  background:#25d366;
+  border:none;
+  border-radius:6px;
+  color:#fff;
+  font-weight:600;
+  cursor:pointer;
+  transition:0.3s;
 }
 
-/* Floating Buttons */
-.whatsapp, .call {
-  position: fixed;
-  right: 20px;
-  width: 55px;
+button:hover, .btn:hover{
+  background:#128c7e;
 }
 
-.whatsapp { bottom: 90px; }
-.call { bottom: 20px; }
-
-.whatsapp img, .call img {
-  width: 100%;
-}
-/* PAGE BANNER */
-.page-banner {
-  background: linear-gradient(
-      rgba(10,26,51,0.8),
-      rgba(10,26,51,0.8)
-    ),
-    url("../images/banner.jpg") center/cover;
-  padding: 80px 20px;
-  text-align: center;
-  color: white;
+/* Gallery grid */
+.gallery-container{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:20px;
 }
 
-.page-banner h1 {
-  font-size: 42px;
-  margin-bottom: 10px;
+.gallery-container img{
+  width:100%;
+  border-radius:8px;
 }
 
-/* SERVICE CARDS */
-.service-card {
-  background: white;
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
-  transition: 0.3s;
+/* Services cards */
+.services-container{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
 }
 
-.service-card img {
-  object-fit: contain;
-background: #f5f5f5;
+.service-card{
+  background:#fff;
+  padding:25px;
+  border-radius:10px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.1);
+  transition:0.3s;
 }
 
-.service-card h3 {
-  margin: 20px 0 10px;
+.service-card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 15px 30px rgba(0,0,0,0.15);
 }
 
-.service-card p {
-  padding: 0 20px 25px;
-  font-size: 15px;
-  color: #555;
+/* Form styles */
+form input, form textarea{
+  width:100%;
+  padding:12px;
+  margin-bottom:15px;
+  border-radius:6px;
+  border:1px solid #ccc;
+  font-size:16px;
 }
 
-.service-card:hover {
-  transform: translateY(-8px);
-}
-/* DIRECTOR PAGE */
-.director-section {
-  padding: 80px 10%;
-}
-
-.director-container {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 50px;
-  align-items: center;
-}
-
-.director-image img {
-  width: 100%;
-  border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-}
-
-.director-content h2 {
-  font-size: 32px;
-  margin-bottom: 5px;
-}
-
-.director-content h4 {
-  color: #555;
-  margin-bottom: 20px;
-}
-
-.director-content p {
-  margin-bottom: 15px;
-  font-size: 16px;
-  color: #444;
-}
-
-.sign {
-  margin-top: 25px;
-  font-size: 17px;
-}
-/* GALLERY PAGE */
-.gallery-section {
-  padding: 70px 8%;
-}
-
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 25px;
-}
-
-.gallery-item {
-  overflow: hidden;
-  border-radius: 15px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-}
-
-.gallery-item img {
-  width: 100%;
-  height: 260px;
-  object-fit: cover;
-  transition: transform 0.4s ease;
-}
-
-.gallery-item:hover img {
-  transform: scale(1.1);
-}
-/* CONTACT PAGE */
-.contact-section {
-  padding: 80px 8%;
-}
-
-.contact-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 50px;
-}
-
-.contact-info h2,
-.contact-form h2 {
-  margin-bottom: 20px;
-}
-
-.contact-info p {
-  margin-bottom: 10px;
-  font-size: 16px;
-}
-
-.contact-info a {
-  color: #0a1a33;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.contact-buttons {
-  margin-top: 25px;
-}
-
-.contact-buttons .btn {
-  margin-right: 15px;
-}
-
-.whatsapp-btn {
-  background: #25d366;
-  color: white;
-}
-
-.contact-form form input,
-.contact-form form textarea {
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 15px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  font-size: 15px;
-}
-
-.contact-form form textarea {
-  height: 120px;
-}
-
-.contact-form form button {
-  background: #0a1a33;
-  color: white;
-  padding: 12px 30px;
-  border: none;
-  border-radius: 30px;
-  font-size: 15px;
-  cursor: pointer;
-}
-
-.note {
-  font-size: 13px;
-  color: #666;
-  margin-top: 10px;
-}
-/* MOBILE MENU */
-@media (max-width: 768px) {
-  nav {
-    display: none;
-    flex-direction: column;
-    background: #0a1a33;
-    position: absolute;
-    top: 70px;
-    right: 0;
-    width: 200px;
-    border-radius: 0 0 10px 10px;
-  }
-
-  nav a {
-    margin: 15px 0;
-    padding: 10px 20px;
-    display: block;
-  }
-
-  .hamburger {
-    display: block;
-    cursor: pointer;
-    font-size: 28px;
-    color: white;
-  }
-
-  nav.active {
-    display: flex;
-  }
-}
-
-.hamburger {
-  display: none;
-}
-.map-container {
-  margin-top: 30px;
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-}
-/* ANIMATION */
-section {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: all 0.8s ease;
-}
-
-section.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-/* LIGHTBOX */
-.lightbox img {
-  cursor: pointer;
-  transition: 0.4s;
-}
-
-.lightbox img:hover {
-  transform: scale(1.05);
+form button{
+  width:100%;
 }
