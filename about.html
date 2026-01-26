@@ -5,7 +5,7 @@
   <title>About Us | Hindustan Security Services</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-   <script src="script.js"></script>
+   
 </head>
 <body>
 
@@ -70,33 +70,11 @@
 <!-- MISSION & VISION -->
 <section class="section gray">
 </section>
-<script>
-function toggleMenu() {
-  const nav = document.querySelector("nav");
-  nav.classList.toggle("active");
-}
-</script>
-<script>
-const sections = document.querySelectorAll("section");
-
-function reveal() {
-  sections.forEach(section => {
-    const top = section.getBoundingClientRect().top;
-    const windowHeight = window.innerHeight;
-
-    if(top < windowHeight - 100) {
-      section.classList.add("visible");
-    }
-  });
-}
-
-window.addEventListener("scroll", reveal);
-window.addEventListener("load", reveal);
-</script>
-
+<script src="script.js"></script>
 
 </body>
 
 </html>
+
 
 
