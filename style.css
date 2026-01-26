@@ -324,7 +324,51 @@ footer {
   background-color: #f0b400;
   color: #111;
 }
+   body{
+  background: #f2f5f8; /* light background for entire website */
+  color: #333;
+  font-family: Arial, sans-serif;
 }
+
+/* Header */
+header{
+  background: #0a2a66; /* dark blue */
+  color: #fff;
+  padding: 15px 0;
+}
+
+/* Navbar links */
+header nav ul li a{
+  color: #fff;
+  padding: 8px 15px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+header nav ul li a:hover{
+  color: #f0b400; /* yellow hover */
+}
+
+/* Buttons */
+.btn{
+  background-color: #0a2a66;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+.btn:hover{
+  background-color: #f0b400;
+  color: #111;
+}
+
+/* Sections */
+section{
+  padding: 50px 0;
+}
+}
+
 
 
 
