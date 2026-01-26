@@ -60,7 +60,8 @@
     <div class="contact-form">
       <h2>Send a Message</h2>
 
-      <form action="send_form.php" method="post">
+      <form action="https://formspree.io/f/mkorrjpw" method="POST">
+        <input type="hidden" name="redirect" value="thankyou.html">
         <input type="text" name="name"placeholder="Your Name" required>
         <input type="email" name="email" placeholder="your Email" required>
         <input type="tel" name="phone" placeholder="Phone Number" required>
@@ -119,3 +120,4 @@ window.addEventListener("load", reveal);
 </body>
 
 </html>
+
