@@ -259,35 +259,41 @@ footer {
   border-radius:6px;
   font-weight:600;
 }
-  .contact-form {
-  max-width: 450px;       /* comfortable width */
-  margin: 50px auto;
+ .contact-form {
+  max-width: 500px;       /* comfortable width */
+  margin: 60px auto;
   background: #ffffff;
-  padding: 35px 30px;     /* thoda bada padding */
-  border-radius: 12px;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  padding: 45px 35px;     /* height aur spacing proper */
+  border-radius: 15px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
   text-align: center;
   font-family: Arial, sans-serif;
 }
 
 .contact-form h2 {
   color: #0a2a66;
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.contact-form p {
+  color: #555;
+  font-size: 15px;
   margin-bottom: 25px;
-  font-size: 24px;
 }
 
 .contact-form .form-group {
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 }
 
 .contact-form input,
 .contact-form textarea {
   width: 100%;
-  padding: 12px 14px;       /* thoda bada input */
-  border-radius: 8px;
+  padding: 14px 16px;
+  border-radius: 10px;
   border: 1px solid #ccc;
   font-size: 15px;
-  transition: border-color 0.3s;
+  transition: all 0.3s ease;
 }
 
 .contact-form input:focus,
@@ -297,19 +303,19 @@ footer {
 }
 
 .contact-form textarea {
-  height: 120px;           /* perfect textarea */
+  height: 140px;           /* perfect height for typing */
   resize: none;
 }
 
 .contact-form button.btn {
   width: 100%;
-  padding: 14px;
+  padding: 16px;
   background-color: #0a2a66;
   color: #fff;
   font-size: 16px;
   font-weight: 600;
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
   cursor: pointer;
   transition: background 0.3s;
 }
@@ -319,6 +325,7 @@ footer {
   color: #111;
 }
 }
+
 
 
 
