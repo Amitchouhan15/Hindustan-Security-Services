@@ -259,35 +259,34 @@ footer {
   border-radius:6px;
   font-weight:600;
 }
-  /* ===== COMPACT CONTACT FORM ===== */
-.contact-form {
-  max-width: 400px;         /* chota size */
-  margin: 40px auto;
+  .contact-form {
+  max-width: 450px;       /* comfortable width */
+  margin: 50px auto;
   background: #ffffff;
-  padding: 30px 25px;       /* kam padding */
+  padding: 35px 30px;     /* thoda bada padding */
   border-radius: 12px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
   text-align: center;
   font-family: Arial, sans-serif;
 }
 
 .contact-form h2 {
   color: #0a2a66;
-  margin-bottom: 20px;
-  font-size: 22px;
+  margin-bottom: 25px;
+  font-size: 24px;
 }
 
 .contact-form .form-group {
-  margin-bottom: 15px;
+  margin-bottom: 18px;
 }
 
 .contact-form input,
 .contact-form textarea {
   width: 100%;
-  padding: 10px 12px;
+  padding: 12px 14px;       /* thoda bada input */
   border-radius: 8px;
   border: 1px solid #ccc;
-  font-size: 14px;
+  font-size: 15px;
   transition: border-color 0.3s;
 }
 
@@ -298,16 +297,16 @@ footer {
 }
 
 .contact-form textarea {
-  height: 100px; /* chota height */
+  height: 120px;           /* perfect textarea */
   resize: none;
 }
 
 .contact-form button.btn {
   width: 100%;
-  padding: 12px;
+  padding: 14px;
   background-color: #0a2a66;
   color: #fff;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 600;
   border: none;
   border-radius: 8px;
@@ -320,6 +319,7 @@ footer {
   color: #111;
 }
 }
+
 
 
 
