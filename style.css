@@ -259,5 +259,25 @@ footer {
   border-radius:6px;
   font-weight:600;
 }
+   /* ===== CONTACT FORM ===== */
+
+.contact-form{
+  max-width:600px;
+  margin:40px auto;
+  background:#ffffff;
+  padding:40px;
+  border-radius:12px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.12);
 }
+
+.contact-form .form-group{
+  margin-bottom:20px;
+}
+
+.contact-form input,
+.contact-form textarea{
+  width:100%;
+  padding:14px 16
+}
+
 
