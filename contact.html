@@ -61,16 +61,30 @@
     <!-- RIGHT FORM -->
     <div class="contact-form">
       <h2>Send a Message</h2>
+      <form action="https://formspree.io/f/mkorrjpw" method="POST" class="contact-form">
 
-      <form action="https://formspree.io/f/mkorrjpw" method="POST">
-        <input type="hidden" name="redirect" value="thankyou.html">
-        <input type="text" name="name"placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="your Email" required>
-        <input type="tel" name="phone" placeholder="Phone Number" required>
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit">Submit</button>
-      </form>
+  <div class="form-group">
+    <input type="text" name="name" placeholder="Your Name" required>
+  </div>
 
+  <div class="form-group">
+    <input type="email" name="email" placeholder="Your Email" required>
+  </div>
+
+  <div class="form-group">
+    <input type="text" name="phone" placeholder="Phone Number">
+  </div>
+
+  <div class="form-group">
+    <textarea name="message" placeholder="Your Message" required></textarea>
+  </div>
+
+  <!-- Redirect -->
+  <input type="hidden" name="_redirect" value="thankyou.html">
+
+  <button type="submit" class="btn">Send Message</button>
+
+</form>
       <p class="note">
         <!--*Form backend baad mein add ho sakta hai.-->
 
@@ -98,6 +112,7 @@
 </body>
 
 </html>
+
 
 
 
